@@ -13,9 +13,9 @@ export const getTodoList = async () => {
     }
 }
 
-export const postTodoList = async () => {
+export const postTodoList = async (list) => {
     try {
-        const response = await postApi(TODO_LIST.create)
+        const response = await postApi(TODO_LIST.create, list)
         return response
     }
     catch (err) {

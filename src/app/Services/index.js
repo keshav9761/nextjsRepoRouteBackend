@@ -39,8 +39,8 @@ class Servies {
         return response;
     }
     // postApi
-    postApi = async (endPoints, params) => {
-        const response = await instance.post(endPoints,params)
+    postApi = async (endPoints,body) => {
+        const response = await instance.post(endPoints,body)
         return response;
     }
 }
